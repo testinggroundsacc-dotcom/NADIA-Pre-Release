@@ -142,7 +142,24 @@ A companion progressive-web-app client lets you talk to NADIA from your phone, c
 
 ## Getting started
 
-> Setup notes — to be expanded.
+Setting up Jarvia (about 5 minutes, one time)
+1. Unzip it. Right-click the Jarvia zip → Extract All. Put the resulting Jarvia folder anywhere you like (e.g. your Desktop or C:\). Don't run it from inside the zip.
+2. Run it once. Open the Jarvia folder and double-click Jarvia.exe. The first launch downloads the chat brain (~8 GB, one time — you'll see a console window working). After that it starts up on its own.
+3. Add two free keys (both free, no credit card, ~2 min each). Jarvia chats using these:
+   - Groq (chat vision + speech-to-text): sign up at https://console.groq.com → https://console.groq.com/keys → "Create API Key" → copy the gsk_… key (you can't see it again).
+   - Tavily (web search): sign up at https://app.tavily.com → copy your tvly-… key.
+
+Then open PowerShell (Start → type "PowerShell" → Enter) and run these two lines with your own keys pasted between the quotes:
+setx GROQ_API_KEY "paste-your-gsk-key-here"
+setx TAVILY_API_KEY "paste-your-tvly-key-here"
+Close and reopen Jarvia so it picks them up. That's it — type to chat, or hold Caps Lock and talk.
+
+Optional extras (all off by default, need an NVIDIA GPU):
+- Pictures — just ask "show me your outfit" in chat. First image downloads the art model (~6.5 GB) once.
+- Spoken replies — click the speaker icon on the character panel. First unmute downloads the voice (~4.5 GB) once.
+- Use it from your phone — install Tailscale on PC + phone (free, same account), click "Go AFK" in the app, open the address it shows on your phone.
+
+Full details are in the in-app "Setup & README" link (bottom of the window), and in Jarvia\_internal\docs\SETUP-KEYS.txt.
 
 ### Prerequisites
 
