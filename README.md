@@ -8,7 +8,7 @@
 
 `v0.1.0 · alpha` — dev build
 
-<img src="docs/images/hero.png" width="360" alt="NADIA portrait">
+<img src="docs/images/cover.png" width="360" alt="NADIA portrait">
 
 
 
